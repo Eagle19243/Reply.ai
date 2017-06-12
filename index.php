@@ -19,8 +19,8 @@
                         },
                         {
                             type :"postback",
-                            title : "Say Hello",
-                            payload: "hello"
+                            title : "Get Started",
+                            payload: "Get Started"
                         }
                     ]
                 },
