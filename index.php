@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Page Title</title>
@@ -16,19 +15,13 @@
     <script type="text/javascript">
         var widgetSettings = {
             channelUuid: "e600b3b7-11d6-4b97-a79c-6ab3fed75a86",
-            style: "fixed", // "fixed", "embed" or "fullpage". Open the sample page for all the configuration paramaters
+            style: "fullpage", // "fixed", "embed" or "fullpage". Open the sample page for all the configuration paramaters
             welcomeMessage : {
-                imageUrl: "https://d2ev753wf7jdl6.cloudfront.net/static/theme-landing-demo/images/reply_logo_blue.gif",
-                text : "Hey! How are you doing?",
+                text : "Hi, I'm the Activity Finder Bot! I see you're looking for fun activities to do at the Old Port. Let's find the perfect one for you!\nWhat do you say?",
                 buttons:[
                     {
-                        type :"web_url",
-                        title : "Open reply.ai",
-                        url: "http://reply.ai"
-                    },
-                    {
                         type :"postback",
-                        title : "Say Hello",
+                        title : "Get Started",
                         payload: "activity_finder_start"
                     }
                 ]
@@ -48,7 +41,7 @@
     <script type="text/javascript">
         replySDK.load(function () {
             $(".Close").click(function(){
-                    replySDK.close();
+                replySDK.close();
             });
             $(".Open").click(function(){
                 replySDK.open();
